@@ -1,5 +1,5 @@
 .jumbotron {
-  height: 300px;
+  height: 275px;
   background: linear-gradient(
     45deg,
     #f3e2c7 0%,
@@ -7,10 +7,10 @@
     #b68d4c 100%,
     #e9d4b3 100%
   );
-  color: white;
+  color: black;
 }
 .other-jumbo {
-  height: 500px;
+  height: 700px;
   margin-top: -50px;
   background-color: blue;
   background-size: cover;
@@ -18,17 +18,30 @@
 hr.small {
   width: 25%;
 }
-#weatherStatement {
-  background-color: green;
+#change {
+  background-color: burlywood;
+  border: none;
+  color: black;
 }
-.col-sm-4 {
-  background-color: brown;
+#weatherStatement {
+  color: black;
 }
 #data1,
 #data2,
-#data3,
 #data4,
 #data5,
 #data6 {
-  color: white;
+  font-size: 30px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px;
+  border-radius: 25px;
+}
+#data3 {
+  padding: 10px;
+  font-size: 60px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px;
+  border-radius: 25px;
 }

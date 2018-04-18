@@ -43,23 +43,23 @@ $(document).ready(function () {
 
                 if (tempCel <= 10) {
                     $('.other-jumbo').css({
-                        'backgroundImage': 'url(\pics\wintry\nature-3279071_960_720)'
+                        'backgroundImage': 'url(pics/nature-3279071_960_720)'
                     });
                     $('#weatherStatement').html("<h1>It's a bit chilly today<hr></h1>");
                 } else if (tempCel > 10 && tempCel < 18) {
                     $('.other-jumbo').css({
-                        'backgroundImage': 'url(\pics\mild\sunlight-2547619_960_720.jpg)',
+                        'backgroundImage': 'url(pics/sunlight-2547619_960_720.jpg)',
                         'color': 'white'
                     });
                     $('#weatherStatement').html("<h1>It's a mild day today<hr></h1>");
                 } else if (tempCel > 18 && tempCel < 28) {
                     $('.other-jumbo').css({
-                        'backgroundImage': 'url(\pics\mild\sunlight-2547619_960_720.jpg)',
+                        'backgroundImage': 'url(pics/nature-1071466_960_720.jpg)',
                     });
                     $('#weatherStatement').html("<h1>A lovely warm day today<hr></h1>");
                 } else {
                     $('.other-jumbo').css({
-                        'backgroundImage': 'url(\pics\hot\desert-790640_960_720.jpg)'
+                        'backgroundImage': 'url(pics/desert-790640_960_720.jpg)'
                     });
                     $('#weatherStatement').html("<h1>It's a really hot day today<hr></h1>");
                 }

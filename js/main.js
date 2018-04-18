@@ -26,7 +26,11 @@ $(document).ready(function () {
                 var city = json.location.name;
                 var region = json.location.region;
 
-                var tempCel = json.current.temp_c;
+                var tempCel = 9
+
+                //json.current.temp_c;
+
+
                 //console.log(tempCel)
                 var tempFar = json.current.temp_f;
                 //console.log(tempFar);
@@ -41,25 +45,25 @@ $(document).ready(function () {
                 $('#getData').html(city + ', ' + region + ', ' + country);
 
 
-                if (tempCel <= 10) {
+                if (tempCel < 10) {
                     $('.other-jumbo').css({
-                        'backgroundImage': 'url(https://github.com/char502/Weather-App-FCC/blob/master/js/pics/nature-3279071_960_720.jpg)'
+                        backgroundImage: 'url(https://cdn.pixabay.com/photo/2018/03/31/19/34/nature-3279071_960_720.jpg)'
                     });
                     $('#weatherStatement').html("<h1>It's a bit chilly today<hr></h1>");
-                } else if (tempCel > 10 && tempCel < 18) {
+                } else if (tempCel > 11 && tempCel < 18) {
                     $('.other-jumbo').css({
-                        'backgroundImage': 'url(https://github.com/char502/Weather-App-FCC/blob/master/js/pics/sunlight-2547619_960_720.jpg)',
+                        backgroundImage: 'url(https://cdn.pixabay.com/photo/2017/07/28/04/26/sunlight-2547619_960_720.jpg)',
                         'color': 'white'
                     });
                     $('#weatherStatement').html("<h1>It's a mild day today<hr></h1>");
-                } else if (tempCel > 18 && tempCel < 28) {
+                } else if (tempCel > 19 && tempCel < 28) {
                     $('.other-jumbo').css({
-                        'backgroundImage': 'url(https://github.com/char502/Weather-App-FCC/blob/master/js/pics/nature-1071466_960_720.jpg)'
+                        backgroundImage: 'url(https://cdn.pixabay.com/photo/2015/12/01/01/28/nature-1071466_960_720.jpg)'
                     });
                     $('#weatherStatement').html("<h1>A lovely warm day today<hr></h1>");
                 } else {
                     $('.other-jumbo').css({
-                        'backgroundImage': 'url(https://github.com/char502/Weather-App-FCC/blob/master/js/pics/desert-790640_960_720.jpg)'
+                        backgroundImage: 'url(https://cdn.pixabay.com/photo/2015/05/30/19/55/desert-790640_960_720.jpg)'
                     });
                     $('#weatherStatement').html("<h1>It's a really hot day today<hr></h1>");
                 }
